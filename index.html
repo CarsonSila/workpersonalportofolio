@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carson Sila · Backend Developer</title>
+<meta name="description" content="Carson Sila, backend developer in Kenya. Java 21 and Spring Boot microservices for fintech, plus Python data and AI tools. Available immediately.">
+<meta property="og:title" content="Carson Sila · Backend Developer">
+<meta property="og:description" content="Java 21 and Spring Boot microservices for fintech, plus Python data and AI tools. Available immediately.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0e7c66">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230e7c66'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3ECS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f3;--ink:#10202b;--mute:#52636e;--line:#d6dcd6;--card:#fff;--acc:#0e7c66;--acc2:#b57a0c;color-scheme:light dark;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e171d;--ink:#e8eeea;--mute:#9fb0b8;--line:#25353f;--card:#14212a;--acc:#3fcfae;--acc2:#e3a72f}}
+:root[data-theme="dark"]{--bg:#0e171d;--ink:#e8eeea;--mute:#9fb0b8;--line:#25353f;--card:#14212a;--acc:#3fcfae;--acc2:#e3a72f}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
+a{color:var(--acc)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--acc2);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:16px;flex-wrap:wrap}
+nav b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.1rem}
+nav div{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:var(--mute);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:56px 0 72px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:800;letter-spacing:-.025em}
+.hero p{color:var(--mute);max-width:46ch;margin:22px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:500;border:1.5px solid var(--ink);color:var(--ink)}
+.btn.p{background:var(--acc);border-color:var(--acc);color:#fff}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.p{color:#07211b}}
+.map{width:100%;height:auto;border:1.5px solid var(--line);border-radius:12px;background:var(--card)}
+.map text{font:500 11px "IBM Plex Sans",sans-serif;fill:var(--ink)}
+.map .n{fill:var(--card);stroke:var(--ink);stroke-width:1.3}
+.map .hot{stroke:var(--acc);stroke-width:2}
+.map .l{stroke:var(--line);stroke-width:1.5;fill:none}
+.pulse{animation:p 2.4s ease-in-out infinite}
+@keyframes p{50%{opacity:.25}}
+@media(prefers-reduced-motion:reduce){.pulse{animation:none}html{scroll-behavior:auto}}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.7rem,3.5vw,2.4rem);margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.card.feat{grid-column:1/-1;border-color:var(--acc);border-width:1.5px}
+.card h3{font-size:1.3rem}
+.card p{margin:0;color:var(--mute);font-size:.97rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
+.tags span{font-size:.8rem;padding:2px 10px;border:1px solid var(--line);border-radius:99px;color:var(--mute)}
+.card a.lk{font-weight:500;font-size:.95rem}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+.about p{margin:0 0 14px}
+dl{margin:0}dt{font-weight:500;margin-top:14px}dd{margin:2px 0 0;color:var(--mute)}
+footer{padding:36px 0 48px;border-top:1px solid var(--line);color:var(--mute);font-size:.92rem}
+@media(max-width:760px){.hero,.about{grid-template-columns:1fr}.hero{padding-top:28px}}
+
+.links{display:flex;gap:18px;flex-wrap:wrap}
+.pill{display:inline-block;font-size:.85rem;padding:4px 12px;border:1px solid var(--acc);color:var(--acc);border-radius:99px;margin-bottom:18px;font-weight:500}
+.tl{display:grid;gap:18px}
+.tl .row{display:grid;grid-template-columns:170px 1fr;gap:20px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.tl .row:last-child{border-bottom:0}
+.tl .when{color:var(--mute);font-size:.92rem}
+.tl h3{font-size:1.15rem;margin-bottom:4px}
+.tl p{margin:0;color:var(--mute);font-size:.97rem}
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin-top:18px}
+.more .card h3{font-size:1.1rem}
+.honors{margin:0;padding-left:20px;color:var(--mute)}
+.honors li{margin-bottom:6px}
+.honors b{color:var(--ink);font-weight:500}
+@media(max-width:760px){.tl .row{grid-template-columns:1fr;gap:4px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>Carson Sila</b><div><a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div>
+<span class="pill">Available immediately · open to relocation</span>
+<h1>I build the services behind money and operations.</h1>
+<p>Backend developer working in Java 21 and Spring Boot microservices, with a data and AI side. BSc Information Technology (Zetech University), completing November 2026.</p>
+<div class="btns"><a class="btn p" href="#work">See my work</a><a class="btn" href="Carson_Sila_Wambua_CV_Junior_Software_Developer.pdf" download>Download CV</a><a class="btn" href="https://github.com/CarsonSila" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+<svg class="map" viewBox="0 0 360 300" role="img" aria-label="Simplified diagram of a microservices system: gateway connected to auth, loans, repayment and notification services">
+<path class="l" d="M180 62V110M180 110H70V160M180 110H180V160M180 110H290V160M70 200V232M180 200V232M290 200V232"/>
+<rect class="n" x="120" y="22" width="120" height="40" rx="8"/><text x="180" y="47" text-anchor="middle">API gateway</text>
+<rect class="n" x="20" y="160" width="100" height="40" rx="8"/><text x="70" y="185" text-anchor="middle">auth</text>
+<rect class="n" x="130" y="160" width="100" height="40" rx="8"/><text x="180" y="185" text-anchor="middle">loans</text>
+<rect class="n hot" x="240" y="160" width="100" height="40" rx="8"/><text x="290" y="185" text-anchor="middle">repayment</text>
+<rect class="n" x="20" y="232" width="100" height="40" rx="8"/><text x="70" y="257" text-anchor="middle">onboarding</text>
+<rect class="n" x="130" y="232" width="100" height="40" rx="8"/><text x="180" y="257" text-anchor="middle">config server</text>
+<rect class="n" x="240" y="232" width="100" height="40" rx="8"/><text x="290" y="257" text-anchor="middle">notifications</text>
+<circle class="pulse" cx="290" cy="150" r="5" fill="var(--acc)"/>
+</svg>
+</header>
+
+<section id="work">
+<h2>Selected work</h2>
+<div class="grid">
+<article class="card feat">
+<h3>DFEP: Distributor Financing Ecosystem Platform</h3>
+<p>A Spring Boot microservices platform for distributor financing, built at E&amp;M Technology House. I built the Repayments service (M-Pesa and core-banking payment callbacks with idempotent handling, a waterfall allocation engine, ledger reconciliation) and the Onboarding service (multi-tenant KYC, role-based access, maker-checker approvals). I also contributed to the BRD, FRD and a design covering 18 services with saga choreography. The code is in a private repository; I am happy to walk through the architecture.</p>
+<div class="tags"><span>Java 21</span><span>Spring Boot 3</span><span>Spring Cloud</span><span>OpenFeign</span><span>Eureka</span><span>JWT</span><span>MySQL</span><span>Docker</span></div>
+</article>
+
+<article class="card">
+<h3>OpsPulse AI</h3>
+<p>An SRE copilot that reads 1,800+ monthly incident logs, flags anomalies with Isolation Forest and predicts SLA breaches about 15 minutes ahead. Includes RAG over runbooks, automated 5-Whys post-mortems and a 15-test Pytest suite. The business case projects 461% Year 1 ROI (modelled, not measured).</p>
+<div class="tags"><span>Python</span><span>Streamlit</span><span>scikit-learn</span><span>Plotly</span><span>Pytest</span></div>
+<a class="lk" href="https://github.com/CarsonSila/Analytic-strategy-and-RIO-11" target="_blank" rel="noopener">View repository</a>
+</article>
+
+<article class="card">
+<h3>ClimaCrop Intelligence</h3>
+<p>A decision platform for Kenyan agriculture. It compares 40 crops on climate, yield and market data for cooperatives, and supports loan underwriting for banks and SACCOs, with views for each role and a Gemini advisory assistant in Swahili and English.</p>
+<div class="tags"><span>Python</span><span>Streamlit</span><span>Plotly</span><span>scikit-learn</span><span>Gemini API</span></div>
+<div class="links"><a class="lk" href="https://climacrop-intelligence.onrender.com/" target="_blank" rel="noopener">Live demo</a><a class="lk" href="https://github.com/CarsonSila/ClimaCrop-Intelligence" target="_blank" rel="noopener">View repository</a></div>
+</article>
+
+<article class="card">
+<h3>Demurrage &amp; Detention Billing Engine</h3>
+<p>A hackathon build for KPC on revenue assurance: reconciling loading manifest volumes against invoiced volumes so billing gaps surface automatically.</p>
+<div class="tags"><span>Revenue assurance</span><span>Reconciliation</span><span>Fintech ops</span></div>
+<div class="links"><a class="lk" href="https://demurrage-revenue-platform.vercel.app/" target="_blank" rel="noopener">Live demo</a><a class="lk" href="https://github.com/doinggbits/demurrage-revenue-engine" target="_blank" rel="noopener">View repository</a></div>
+</article>
+
+</div>
+
+<div class="more">
+<article class="card">
+<h3>INUKA SmartMatch</h3>
+<p>Finds duplicate beneficiary records and lets a reviewer search, check and combine them in one workflow.</p>
+<div class="tags"><span>Deduplication</span><span>Record matching</span><span>Web app</span></div>
+<a class="lk" href="https://inukasmartmatch.vercel.app" target="_blank" rel="noopener">Open live demo</a>
+</article>
+<article class="card">
+<h3>Production-style ETL pipeline</h3>
+<p>An idempotent pipeline with logging, Great Expectations validation, .env configuration and cron scheduling.</p>
+<div class="tags"><span>Python</span><span>SQLite</span><span>Great Expectations</span><span>cron</span></div>
+<a class="lk" href="https://github.com/CarsonSila/week4_etl_pipeline" target="_blank" rel="noopener">View repository</a>
+</article>
+<article class="card">
+<h3>Safety Command Center</h3>
+<p>A Streamlit safety analytics dashboard using Pareto analysis, leading and lagging indicators, and hotspot density maps.</p>
+<div class="tags"><span>Streamlit</span><span>Plotly</span><span>Safety analytics</span></div>
+</article>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="tl">
+<div class="row"><div class="when">Jul 2026 – Sep 2026</div><div><h3>Backend Software Developer · E&amp;M Technology House</h3><p>Built the Repayments and Onboarding microservices for a distributor-financing platform in Java 21 and Spring Boot, secured with Spring Security and JWT, shipped with Maven, Docker and Jenkins.</p></div></div>
+<div class="row"><div class="when">Jun 2026 – Sep 2026</div><div><h3>Operational Data Analyst Fellow · Power Learn Project / Inuka Enterprise</h3><p>Built OpsPulse AI and presented its business case to a non-technical finance audience.</p></div></div>
+<div class="row"><div class="when">Apr 2024 – Oct 2024</div><div><h3>Network Operations and Telecommunications Engineering Intern · Quavatel Limited</h3><p>Monitored 24/7 network telemetry for tier-1 operators under a 99.8% SLA uptime benchmark.</p></div></div>
+</div>
+</section>
+
+<section id="about" class="about">
+<div>
+<h2>About</h2>
+<p>I'm a backend developer who builds fintech and operations services in Java and Spring Boot. I'm completing a BSc in Information Technology at Zetech University in November 2026, after a Diploma with Distinction. My internship at Quavatel Limited was in telecommunications network operations, and I now build payment and onboarding services for a distributor-financing platform.</p>
+<p>I like work where the domain matters: petroleum distribution, agriculture finance and operations data. Through the Power Learn Project's Inuka programme I built several systems for Kenya Pipeline Company, and I'm comfortable with data cleaning, analysis and visualisation.</p>
+<h3 style="font-size:1.1rem;margin:22px 0 10px">Highlights</h3>
+<ul class="honors">
+<li><b>1st Runner-Up</b>, University Innovation Hackathon 2025</li>
+<li><b>Microsoft</b> AI and Data Analysis certificate (2026)</li>
+<li><b>Diploma in IT</b> with Distinction, Zetech University</li>
+</ul>
+</div>
+<dl>
+<dt>Backend</dt><dd>Java 21, Spring Boot, Spring Cloud, Spring Security and JWT, REST APIs, OpenFeign, Eureka, microservices</dd>
+<dt>Databases</dt><dd>PostgreSQL, MySQL, SQL</dd>
+<dt>Delivery</dt><dd>Docker, Maven, Jenkins (CI/CD), Git and GitHub, Linux, Postman and Swagger</dd>
+<dt>Data and AI</dt><dd>Python, Pandas, scikit-learn, Streamlit, Plotly, LLM APIs and RAG, SAS Viya</dd>
+<dt>Frontend</dt><dd>React/Next.js and Angular (working knowledge)</dd>
+</dl>
+</section>
+
+<section id="contact">
+<h2>Let's talk</h2>
+<p>I'm open to backend and data engineering roles and available immediately. The quickest way to reach me is email.</p>
+<div class="btns"><a class="btn p" href="mailto:wambuacarson@gmail.com">wambuacarson@gmail.com</a><a class="btn" href="Carson_Sila_Wambua_CV_Junior_Software_Developer.pdf" download>Download CV</a><a class="btn" href="https://www.linkedin.com/in/carson-wambua" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/CarsonSila" target="_blank" rel="noopener">GitHub</a></div>
+</section>
+</div>
+<footer><div class="wrap">© 2026 Carson Sila · Kenya</div></footer>
+</body>
+</html>
